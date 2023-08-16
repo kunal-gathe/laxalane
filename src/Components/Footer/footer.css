@@ -1,0 +1,48 @@
+.footer-container{
+    background-color: #A6B1E1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: inherit;
+    padding: 2rem;
+}
+.footer-info{
+    width: 32%;
+}
+.social-media{
+    width: 32%;
+}
+.socia-media h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socia-icon{
+    display: flex;
+    margin-left: 0;
+}
+.adress{
+    width: 32%;
+}
+.socia-icon p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+@media screen and (max-width: 426px) {
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .footer-info,
+    .social-media,
+    .adress{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+}

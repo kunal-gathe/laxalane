@@ -1,0 +1,117 @@
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-headings{
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    padding: 3rem;
+}
+.cart-product{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 60%;
+    margin: auto;
+    padding: 1rem 0rem;
+}
+.product-img{
+    width: 6rem;
+    height: 6rem;
+}
+.item{
+    padding: 1rem 5rem;
+    font-weight: 500;
+}
+.cart-title{
+    padding: 0 0;
+}
+
+.cart-remove{
+    color: red;
+    font-size: 1.2rem;
+}
+.total_price{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin:  4rem auto;
+    background-color: #F4EEFF;
+    padding: 1rem 0rem;
+    border-radius: 10px;
+}
+.total_price p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1025px){
+    .cart-product {
+        width: 70%;
+    }
+    .cart-title{
+        padding:  0 2rem;
+        width: 100%;
+    }
+    .cart-price {
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .cart-headings {
+        padding: 2rem;
+    }
+    .cart-product {
+        width: 80%;
+    }
+    .cart-price {
+        padding: 0 2rem;
+    }
+    .cart-stock {
+        padding: 0 3rem;
+    }
+    .total_price {
+        display: flex;
+        justify-content: space-around;
+        width: 65%;
+        margin: 4rem auto;
+        background-color: #F4EEFF;
+        padding: 1rem 0rem;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 426px){
+    .cart-container, .cart-headings{
+        display: none;
+    }
+    .cart-product{
+        display: block;
+        margin: 2rem;
+        position: relative;
+    }
+    .product-img{
+        margin: 1rem;
+        display: inline;
+    }
+    .cart-title{
+        display: inline;
+        position: absolute;
+        top: 2rem;
+        width: 50%;
+    }
+    .cart-price,.cart-remove {
+            display: inline;
+            position: absolute;
+            top: 5rem;
+    }
+    .cart-stock{
+       display: none;
+        
+    }
+    .cart-remove{
+       margin-left: 3rem;
+        
+    }
+
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.home-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem 8rem;
+}
+.web-info h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+}
+.web-info p{
+    width: 90%;
+    opacity: 0.5;
+}
+.web-info button{
+    background-color: #424874;
+    color: #fff;
+    width: 20%;
+    cursor: pointer;
+}
+.img-web{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 70%;
+    border-radius: 5px;
+}
+.box{
+    width: 28%;
+    height: 40%;
+    background-color: #DCD6F7;
+    position: absolute;
+    top: 12rem;
+    right: 15rem;
+    z-index: -1;
+}
+.link{
+text-decoration: none;
+color: #DCD6F7;
+}
+@media screen and (max-width: 1025px) {
+    .box{
+        top: 15rem;
+        right: 8rem;
+    }
+    .img-web{
+       margin-left: 3rem;
+    }
+    .web-info button{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .home-container{
+        display: block;
+        padding: 0;
+    }
+    .box{
+        display: none;
+    }
+    .img-web{
+       margin: 3rem 0 0 3rem;
+    }
+    .web-info button{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .home-container{
+        padding: 3rem 
+    }
+    .box{
+        top: 10rem;
+        right: 3rem;
+        height: 30%;
+    }
+    .img-web{
+       margin-left: 3rem;
+    }
+    .web-info button{
+        width: 30%;
+    }
+}
